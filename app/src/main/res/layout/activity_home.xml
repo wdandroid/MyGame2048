@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.cskaoyan.lan.mygame2048.MainActivity">
+
+
+    <!--第一部分-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_home_target"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg1"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_home_score"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10sp"
+                android:background="@drawable/bg3"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Record"
+                android:textSize="15sp"
+                android:background="@drawable/bg2"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_home_record"
+                android:background="@drawable/bg3"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_margin="5dp"
+                android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--第二部分-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/rl_home_center">
+       <!-- <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:rowCount="4"
+            android:columnCount="4"
+            android:id="@+id/gl_home_content"
+            >
+        </GridLayout>-->
+
+        <!--<com.cskaoyan.lan.view.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello.world"/>-->
+    </RelativeLayout>
+
+    <!--第三部分-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Revert"
+           android:id="@+id/revert"
+           android:background="@drawable/bt_background"
+           android:layout_margin="2dp"
+           />
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Restart"
+           android:id="@+id/restart"
+           android:background="@drawable/bt_background"
+           android:layout_margin="2dp"
+
+           />
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Option"
+           android:id="@+id/option"
+           android:background="@drawable/bt_background"
+           android:layout_margin="2dp"
+           />
+
+   </LinearLayout>
+
+</LinearLayout>
