@@ -65,6 +65,8 @@ public class Home extends ActionBarActivity implements View.OnClickListener {
         application = (MyApplication) getApplication();
 
         //此处有坑。
+        Log.i("TAG","set text para shoud be string");
+
         tv_home_target.setText(application.getTarget()+"");
         tv_home_record.setText(application.getHighestRecord()+"");
 
